@@ -9,6 +9,6 @@ package com.projekt.aussenklima;
  *
  * @author michal
  */
-public class Main1 {
+public class Main {
     
 }
