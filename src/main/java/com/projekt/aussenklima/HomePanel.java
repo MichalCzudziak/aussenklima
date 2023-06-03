@@ -51,7 +51,6 @@ public class HomePanel extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -221,10 +220,8 @@ public class HomePanel extends javax.swing.JFrame {
                 .addComponent(thirdCityButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(fourthCityButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 582));
 
         navigationPane.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
         navigationPane.setFont(new java.awt.Font("Segoe UI Semibold", 0, 16)); // NOI18N
@@ -250,8 +247,6 @@ public class HomePanel extends javax.swing.JFrame {
 
         navigationPane.addTab("Home", homePanel);
 
-        firstCityPanel.setBackground(new java.awt.Color(255, 204, 102));
-
         jLabel10.setText("Frankfurt");
 
         javax.swing.GroupLayout firstCityPanelLayout = new javax.swing.GroupLayout(firstCityPanel);
@@ -272,8 +267,6 @@ public class HomePanel extends javax.swing.JFrame {
         );
 
         navigationPane.addTab("Frankfurt", firstCityPanel);
-
-        secondCityPanel.setBackground(new java.awt.Color(204, 102, 0));
 
         jLabel9.setText("Kelsterbach");
 
@@ -296,8 +289,6 @@ public class HomePanel extends javax.swing.JFrame {
 
         navigationPane.addTab("Kelsterbach", secondCityPanel);
 
-        thirdCityPanel.setBackground(new java.awt.Color(102, 204, 0));
-
         jLabel8.setText("Rodgau");
 
         javax.swing.GroupLayout thirdCityPanelLayout = new javax.swing.GroupLayout(thirdCityPanel);
@@ -318,8 +309,6 @@ public class HomePanel extends javax.swing.JFrame {
         );
 
         navigationPane.addTab("Rodgau", thirdCityPanel);
-
-        fourthCityPanel.setBackground(new java.awt.Color(153, 153, 255));
 
         jLabel7.setText("Wiesbaden");
 
@@ -342,7 +331,22 @@ public class HomePanel extends javax.swing.JFrame {
 
         navigationPane.addTab("Wiesbaden", fourthCityPanel);
 
-        getContentPane().add(navigationPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 2, -1, 580));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(navigationPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(navigationPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pack();
         setLocationRelativeTo(null);
