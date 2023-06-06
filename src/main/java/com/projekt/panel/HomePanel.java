@@ -309,6 +309,8 @@ public class HomePanel extends javax.swing.JFrame {
         dashboard Dashboard=new dashboard();
         menu.removeAll();
         menu.add(Dashboard).setVisible(true);
+        
+    
     }//GEN-LAST:event_homePanelMouseClicked
 
     /**
@@ -346,6 +348,8 @@ public class HomePanel extends javax.swing.JFrame {
         });
     }
 
+ 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.projekt.panel.Header header1;
     private javax.swing.JPanel homePanel;

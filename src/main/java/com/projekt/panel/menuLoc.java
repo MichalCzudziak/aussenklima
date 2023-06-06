@@ -4,6 +4,7 @@
  */
 package com.projekt.panel;
 
+import javax.swing.JLabel;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
 
 /**
@@ -20,6 +21,7 @@ public class menuLoc extends javax.swing.JInternalFrame {
         this.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         BasicInternalFrameUI ui=(BasicInternalFrameUI)this.getUI();
         ui.setNorthPane(null);
+        
     }
 
     /**
@@ -36,7 +38,8 @@ public class menuLoc extends javax.swing.JInternalFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        location.setForeground(new java.awt.Color(255, 255, 204));
+        location.setForeground(new java.awt.Color(255, 255, 255));
+        location.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         location.setText("FFM");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
